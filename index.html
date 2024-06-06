@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./images/favic.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Student Form</h2>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="" id="name"></td>
+            </tr>
+
+            <tr>
+                <th>Age</th>
+                <td><input type="text" name="" id="age"></td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td><input type="radio" name="g" id="ge" value="Male"> Male
+                    <input type="radio" name="g" id="ge" value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <th>Course</th>
+                <td><select name="" id="course">
+                        <option value="Select Course">Select Course</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="" id="email"></td>
+            </tr>
+
+            <tr>
+                <th colspan="2"><Button style="width:100%;" id="btnadd">Add</Button></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="answer" id="answer">
+        <table id="table-container">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
